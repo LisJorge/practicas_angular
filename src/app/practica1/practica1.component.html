@@ -1,1 +1,131 @@
-<p>practica1 works!</p>
+<html>
+    <head>
+        <title>Diseño Componente</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+        <body>
+            <div class="main-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="header">
+                                    <h4 class="title">Nuevo registro</h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md">
+                                    <label>Codigo</label>
+                                    <input type="text" class="form-control" placeholder="Ingrese el codigo">
+                                </div>
+                                <div class="form-group col-md">
+                                    <label>Receptor</label>
+                                    <input type="text" class="form-control" placeholder="Nombre del Receptor">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md">
+                                    <label>Fragilidad</label>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label class="radio-inline"><input type="radio" name="optradio" checked>Alto</label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="radio-inline"><input type="radio" name="optradio">Medio</label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="radio-inline"><input type="radio" name="optradio">Bajo</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md">
+                                    <label>Peso</label>
+                                    <input type="text" class="form-control" placeholder="kg">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md">
+                                    <label>Destino</label>
+                                    <input type="text" class="form-control" placeholder="Ingrese el destino">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md">
+                                        <label>Ubicacion Actual</label>
+                                        <input type="text" class="form-control" placeholder="Ubicacion Actual">
+                                </div>
+                                    <div class="form-group col-md">
+                                        <label>Ubicacion Proxima</label>
+                                        <div class="form-group">
+                                            <select class="form-control" id="controlmenuseleccion">
+                                                <option>Seleccione Bodega</option>
+                                                <option>Occidente</option>
+                                                <option>Centro</option>
+                                                <option>Oriente</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md">
+                                        <label>Descripcion</label>
+                                        <input type="text" class="form-control" placeholder="Ingrese el destino">
+                                    </div>
+                                </div> 
+                                <div class="row">
+                                    <div class="form-group col-md">
+                                        <label>Transportista</label>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>Fecha de Entrega</label>
+                                                <input class="form-control" type="date" name="horario">
+                                            </div>
+                                            
+                                            <div class="col-md-6">                                        
+                                                <div class="form-group">
+                                                    <label>Hora de Entrega</label>
+                                                    <select class="form-control" id="controlmenuseleccion">
+                                                        <option>8:00 am</option>
+                                                        <option>10:00 am</option>
+                                                        <option>12:00 md</option>
+                                                        <option>2:00pm</option>
+                                                        <option>4:00pm</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-4"></div>
+                                    <div class="form-group col-md-4">
+                                        <input type="text" class="form-control" placeholder="Pedro Juarez">
+                                    </div>
+                                    <div class="form-group col-md-4"></div>
+                                </div> 
+                                <div class="row">
+                                    <div class="form-group col-md-12">
+                                        <button class="btn btn-danger" style="align-items: flex-end important!" type="button">Registrar</button>
+                                    </div>
+                                </div>    
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>                     
+        </body>
+    </head>
+</html>
