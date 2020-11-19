@@ -1,0 +1,207 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">Nuevo registro</h4>
+                    </div>
+                    <div class="content">
+                        <!--por ahora es un formulario estático luego se debe usar la directiva ngModel para que ya se haga manejo de datos-->
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <table class="table">
+                                        <tr>
+                                            <td><p>Proximo envio</p></td>
+                                        </tr>
+                                        <hr>
+                                        <tr class="form-group">
+                                            <td>
+                                                <div class="row margen">
+                                                    <div class="col-md-3">Codigo</div>
+                                                    <input class="form-control margen" type="text" placeholder="Codigo" name="Codigo" title="Codigo">
+                                                    <div class="col-md-3">Fragilidad</div>
+                                                    <div class="col-md-3">
+                                                        <div class="radio">
+                                                            <input class="form-check-input" type="radio" name="fragilidad" id="radio2" value="option1" checked>
+                                                            <label class="form-check-label" for="radio2">
+                                                              Alta
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="radio">
+                                                            <input type="radio" name="fragilidad" id="radio1" value="option2">
+                                                            <label for="radio1">
+                                                              Media
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="radio">
+                                                            <input class="form-check-input" type="radio" name="fragilidad" id="radio3" value="option3" >
+                                                            <label class="form-check-label" for="radio3">
+                                                              Baja
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="col-md-6">Peso</div>
+                                                <input class="form-control margen" type="number" placeholder="Peso en kg" name="peso" title="Peso en kg">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <br>
+                                                <div class="col-md-6">Descripción</div>
+                                                <textarea class="form-control textarea margen" placeholder="Descripción del contenido del paquete" name="descripcion" title="Descripción del contenido del paquete"></textarea>
+                                            </td>
+                                        </tr>
+                                        <br><br>
+                                        <tr>
+                                            <td><p>Ubicacion</p></td>
+                                        </tr>
+                                        <hr>
+                                        <tr>
+                                            
+                                            <td>
+                                                <div class="col-md-6">Actual</div>
+                                                <input class="form-control margen" type="text" placeholder="Ubicación actual" 
+                                                name="ubicacion_actual" title="Ubicación actual">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <div class="col-md-6">Proxima</div>
+                                            <input class="form-control margen" type="text" placeholder="Proxima" 
+                                            name="Destino" title="Proxima">
+                                        </tr>
+                                        <br>
+                                        <tr>
+                                            <div class="col-md-6">Destino/div>
+                                                <select class="form-control margen" name="destino" title="Destino">
+                                                    <option>--canada--</option>
+                                                    <option>Usa</option>
+                                                    <option>El Salvador</option>
+                                                    <option>mexico</option>
+                                                </select>
+                                        </tr>
+                                        <br><br>
+                                        
+                                        <hr>
+                                        
+                                    </table>
+                                </div>
+                                <div class="col-md-6">
+                                    <table class="table">
+                                        <tr>
+                                            <td><p>Receptor</p></td>
+                                        </tr>
+                                        <hr>
+                                        <tr>
+                                            <td>
+                                                <input class="form-control margen" type="text" placeholder="Nombre" name="nombre_receptor" title="Nombre">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <input class="form-control margen" type="text" placeholder="Correo electrónico" name="correo" title="Correo electrónico">
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <input class="form-control margen" type="number" placeholder="Teléfono" name="telefono" title="Teléfono">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <input class="form-control margen" type="text" placeholder="Código postal" name="codigo_postal" title="Código postal">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <br>
+                                        <tr><td class="margen">Dirección</td></tr>
+                                        <tr>
+                                            <select class="form-control margen" name="departamento" title="Departamento">
+                                                <option>--Departamento--</option>
+                                                <option>San Salvador</option>
+                                                <option>Santa Ana</option>
+                                                <option>La Libertad</option>
+                                            </select>
+                                        </tr>
+                                        <tr>
+                                            <select class="form-control margen" name="municipio" title="Municipio">
+                                                <option>--Municipio--</option>
+                                                <option>San Salvador</option>
+                                                <option>Santa Ana</option>
+                                                <option>La Libertad</option>
+                                            </select>
+                                        </tr>
+                                        <tr>
+                                            <input class="form-control margen" type="text" placeholder="Dirección" name="direccion" title="Dirección">
+                                        </tr>
+                                        <br>
+                                        <tr>
+                                            <td><p>Transporte</p></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        Horario
+                                                    <input class="form-control" type="date" name="horario">
+                                                    <select class="form-control margen" name="hora">
+                                                        <option>8:00</option>
+                                                        <option>10:00</option>
+                                                        <option>12:00</option>
+                                                        <option>2:00</option>
+                                                    </select>
+                                                    </div>
+                                                </div>
+                                            </td>                                            
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <select class="form-control" name="transportista" >
+                                                    <option>--Transportista--</option>
+                                                    <option>TP 1</option>
+                                                    <option>TP 2</option>
+                                                    <option>auxiliar</option>
+                                                    <option>motorista</option>
+                                                    <option>jefe</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <!--br><br>
+                                        <tr>
+                                            <td><p>Ubicacion</p></td>
+                                        </tr>
+                                        <hr>
+                                        <tr>
+                                            <td>
+                                                <input class="form-control margen" type="text" placeholder="Ubicación actual" 
+                                                name="ubicacion_actual" title="Ubicación actual">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <input class="form-control margen" type="text" placeholder="Próxima ubicación" 
+                                            name="ubicacion_proxima" title="Próxima ubicación">
+                                        </tr-->
+                                    </table>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <button class="btn btn-primary" style="align-items: flex-end important!" type="button">Actualizar siguiente envio</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
