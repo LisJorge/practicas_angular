@@ -1,0 +1,37 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="card text-center">
+                    <div class="card-header">TABLA</div>
+                    <table class="table">
+                        <tr *ngFor="let tabla of tablas">
+                            <td>
+                                <p>{{tabla}}</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div *ngIf="mostrar" class="col-md-2">
+                <div class="card text-center">
+                    <div class="card-header">RESULTADO</div>
+                    <table class="table">
+                        <tr *ngFor="let resultado of resultados">
+                            <td>
+                                <p>{{resultado}}</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-4 text-center">
+                        <button (click)="mostrar=!mostrar" class="btn btn-primary btn-block">Mostrar/Ocultar resultados</button>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -11,6 +11,8 @@ import { UpgradeComponent } from '../../upgrade/upgrade.component';
 
 import { Practica1Component } from '../../practica1/practica1.component';
 
+import { Practica2Component } from '../../practica2/practica2.component';
+
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard',      component: HomeComponent },
     { path: 'user',           component: UserComponent },
@@ -21,4 +23,5 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'notifications',  component: NotificationsComponent },
     { path: 'upgrade',        component: UpgradeComponent },
     { path: 'practica1',      component: Practica1Component },
+    { path: 'practica2',      component: Practica2Component },
 ];

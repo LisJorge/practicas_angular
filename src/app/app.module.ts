@@ -13,6 +13,7 @@ import { AppComponent } from './app.component';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { Practica1Component } from './practica1/practica1.component';
+import { Practica2Component } from './practica2/practica2.component';
 
 @NgModule({
   imports: [
@@ -28,7 +29,8 @@ import { Practica1Component } from './practica1/practica1.component';
   declarations: [
     AppComponent,
     AdminLayoutComponent,
-    Practica1Component
+    Practica1Component,
+    Practica2Component
   ],
   providers: [],
   bootstrap: [AppComponent]
