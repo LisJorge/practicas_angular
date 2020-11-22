@@ -1,0 +1,115 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card col-md-7">
+                        <form class="form-horizontal" role="form">
+                            <div class="form-group row">
+                                <br>
+                                <h5 class="title col-form" style="font-weight: bold;">Próximo Envío</h5>
+                                <br>
+                            </div>
+                            <!--Codigo-->
+                                <div class="form-group row">
+                                    <label class="col-md-2 col-form-label" for="codigo">Codigo</label>
+                                    <div class="col-md-10">
+                                        <input class="form-control" type="text" placeholder="Código" name="codigo" title="Código">
+                                    </div>
+                                </div>
+                            <!--Receptor-->
+                                <div class="form-group row">
+                                    <label class="col-md-2 col-form-label" for="receptor">Receptor</label>
+                                    <div class="col-md-10">
+                                        <input class="form-control" type="text" placeholder="Receptor" name="receptor" title="Receptor">
+                                    </div>
+                                </div>
+                            <!-- Fragilidad -->
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label" for="fragilidad">Fragilidad</label>
+                                    <div class="col-md-3">
+                                        <div class="radio">
+                                            <input class="form-check-input" type="radio" name="fragilidad" id="radio1" value="option1" checked>
+                                            <label class="form-check-label" for="radio1">Alta</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="radio">
+                                            <input class="form-check-input" type="radio" name="fragilidad" id="radio2" value="option2">
+                                            <label class="form-check-label" for="radio2">Media</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="radio">
+                                            <input class="form-check-input" type="radio" name="fragilidad" id="radio3" value="option3">
+                                            <label class="form-check-label" for="radio3">baja</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            <!-- Peso -->
+                                <div class="form-group row">
+                                    <label class="col-md-2 col-form-label" for="peso">Peso</label>
+                                    <div class="col-md-10">
+                                        <input class="form-control" type="number" placeholder="Peso en kg" name="peso" title="Peso en kg">
+                                    </div>
+                                </div>
+                            <!-- Ubicacion Actual -->
+                                <div class="form-group row">
+                                    <label class="col-md-2 col-form-label" for="ubicacion_actual">Ubicación actual</label>
+                                    <div class="col-md-10">
+                                    <input class="form-control" type="text" placeholder="P Sherman, calle Wallaby" name="ubicacion_actual" title="Ubicación actual">
+                                    </div>
+                                </div>
+                            <!-- Ubicacion Proxima -->
+                                <div class="form-group row">
+                                    <label class="col-md-2 col-form-label" for="ubicacion_proxima">Ubicación próxima</label>
+                                    <div class="col-md-10">
+                                        <select class="form-control" name="ubicacion_proxima">
+                                            <option>--Próxima ubicación--</option>
+                                            <option>Bodega a</option>
+                                            <option>Bodega b</option>
+                                            <option>Bodega c</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            <!-- Descripcion -->
+                                <div class="form-group row">
+                                    <label class="col-md-2 col-form-label" for="descripcion">descripcion</label>
+                                    <div class="col-md-10">
+                                        <textarea class="form-control textarea" placeholder="Agregar una descripción" name="descripcion" title="Descripción"></textarea>
+                                    </div>
+                                </div>
+                            <!--Transportista-->
+                            <div class="form-group row">
+                                <label class="col-md-2 col-form-label" for="transportista">Transportista</label>
+                                <div class="col-md-5">
+                                <select class="form-control" name="dia">
+                                    <option>--Día--</option>
+                                    <option>22-11-2020</option>
+                                </select>
+                                </div>
+                                <div class="col-md-5">
+                                    <select class="form-control" name="hora">
+                                        <option>--Hora--</option>
+                                        <option>8:00</option>
+                                        <option>10:00</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-2"></label>
+                                <div class="col-md-10">
+                                    <input class="form-control" type="text" placeholder="Pedro Juarez" name="transportista" title="Nombre del transportista">
+                                </div>
+                            </div>
+                            <!-- Boton -->
+                                <div class="form-group row">
+                                    <div class="text-center">
+                                        <button class="btn btn-primary active" type="submit" id="actualizar">Actualizar siguiente envio</button>
+                                    </div>
+                                </div>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
